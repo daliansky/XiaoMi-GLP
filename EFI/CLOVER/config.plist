@@ -83,8 +83,6 @@
 			<string>SSDT-UIAC.aml</string>
 			<string>SSDT-PNLF.aml</string>
 		</array>
-		<key>AutoMerge</key>
-		<true/>
 		<key>DSDT</key>
 		<dict>
 			<key>Fixes</key>
@@ -287,8 +285,6 @@
 				<false/>
 				<key>PStates</key>
 				<false/>
-				<key>PluginType</key>
-				<true/>
 			</dict>
 			<key>PluginType</key>
 			<integer>1</integer>
@@ -324,54 +320,6 @@
 	</dict>
 	<key>Devices</key>
 	<dict>
-		<key>#AddProperties</key>
-		<array>
-			<dict>
-				<key>Comment</key>
-				<string>hda-gfx=onboard-1 for HDMI audio</string>
-				<key>Device</key>
-				<string>IntelGFX</string>
-				<key>Key</key>
-				<string>hda-gfx</string>
-				<key>Value</key>
-				<data>
-				b25ib2FyZC0xAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>hda-gfx=onboard-1 for HDMI audio</string>
-				<key>Device</key>
-				<string>HDA</string>
-				<key>Key</key>
-				<string>hda-gfx</string>
-				<key>Value</key>
-				<data>
-				b25ib2FyZC0xAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>layout-id=3</string>
-				<key>Device</key>
-				<string>HDA</string>
-				<key>Key</key>
-				<string>layout-id</string>
-				<key>Value</key>
-				<data>
-				AwAAAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Device</key>
-				<string>HDA</string>
-				<key>Key</key>
-				<string>PinConfigurations</string>
-				<key>Value</key>
-				<data>
-				</data>
-			</dict>
-		</array>
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
@@ -381,6 +329,60 @@
 		<dict>
 			<key>#Kaby Lake-Comment</key>
 			<string>To avoid automatic Clover fake device-id (Skylake) injection</string>
+		</dict>
+		<key>Properties</key>
+		<dict>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>
+				CQCbPg==
+				</data>
+				<key>disable-external-gpu</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con1-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con1-type</key>
+				<data>
+				AAgAAA==
+				</data>
+				<key>framebuffer-con2-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con2-index</key>
+				<data>
+				/////w==
+				</data>
+				<key>framebuffer-fbmem</key>
+				<data>
+				AACQAA==
+				</data>
+				<key>framebuffer-patch-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-pipecount</key>
+				<data>
+				AgAAAA==
+				</data>
+				<key>framebuffer-portcount</key>
+				<data>
+				AgAAAA==
+				</data>
+				<key>framebuffer-stolenmem</key>
+				<data>
+				AAAwAQ==
+				</data>
+				<key>framebuffer-unifiedmem</key>
+				<data>
+				AAAAYA==
+				</data>
+			</dict>
 		</dict>
 		<key>USB</key>
 		<dict>
@@ -435,12 +437,10 @@
 			<true/>
 		</dict>
 		<key>Theme</key>
-		<string>SimpleThemeDark</string>
+		<string>Hackintosh_ID</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
-		<key>DualLink</key>
-		<integer>0</integer>
 		<key>EDID</key>
 		<dict>
 			<key>Inject</key>
@@ -455,8 +455,6 @@
 			<key>NVidia</key>
 			<false/>
 		</dict>
-		<key>ig-platform-id</key>
-		<string>0x12345678</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
@@ -612,57 +610,19 @@
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
-		<key>BiosReleaseDate</key>
-		<string>06/26/2018</string>
-		<key>BiosVendor</key>
-		<string>Apple Inc.</string>
-		<key>BiosVersion</key>
-		<string>MBP152.88Z.0178.B00.1806260902</string>
-		<key>Board-ID</key>
-		<string>Mac-827FB448E656EC26</string>
-		<key>BoardManufacturer</key>
-		<string>Apple Inc.</string>
-		<key>BoardSerialNumber</key>
-		<string>C02815902GUF9H0CB</string>
-		<key>BoardType</key>
-		<integer>10</integer>
-		<key>BoardVersion</key>
-		<string>1.0</string>
-		<key>ChassisAssetTag</key>
-		<string>MacBook-Aluminum</string>
-		<key>ChassisManufacturer</key>
-		<string>Apple Inc.</string>
-		<key>ChassisType</key>
-		<string>0x09</string>
-		<key>Family</key>
-		<string>MacBook Pro</string>
-		<key>FirmwareFeatures</key>
-		<string>0xFC0FE137</string>
-		<key>FirmwareFeaturesMask</key>
-		<string>0xFF1FFF3F</string>
-		<key>LocationInChassis</key>
-		<string>Part Component</string>
-		<key>Manufacturer</key>
-		<string>Apple Inc.</string>
-		<key>Mobile</key>
-		<true/>
-		<key>PlatformFeature</key>
-		<string>0x1A</string>
 		<key>ProductName</key>
 		<string>MacBookPro15,2</string>
 		<key>ProductName-Comment</key>
 		<string>Using Haswell MacBookAir6,2 until Clover has support for KabyLake identifiers</string>
-		<key>SerialNumber</key>
-		<string>C02WL55AKGYG</string>
-		<key>Version</key>
-		<string>1.0</string>
+		<key>Trust</key>
+		<true/>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
 		<key>#BacklightLevel</key>
 		<integer>0</integer>
 		<key>InjectKexts</key>
-		<string>Detect</string>
+		<string>Yes</string>
 		<key>InjectSystemID</key>
 		<true/>
 	</dict>

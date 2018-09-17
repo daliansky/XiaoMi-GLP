@@ -449,6 +449,8 @@
 			<key>NVidia</key>
 			<false/>
 		</dict>
+		<key>ig-platform-id</key>
+		<string>0x12345678</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
@@ -640,10 +642,10 @@
 		<string>0x1A</string>
 		<key>ProductName</key>
 		<string>MacBookPro14,1</string>
-		<key>SerialNumber</key>
-		<string>C02VH268HV28</string>
 		<key>ProductName-Comment</key>
 		<string>Using Haswell MacBookAir6,2 until Clover has support for KabyLake identifiers</string>
+		<key>SerialNumber</key>
+		<string>C02VH268HV28</string>
 		<key>Trust</key>
 		<true/>
 		<key>Version</key>
