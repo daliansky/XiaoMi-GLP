@@ -336,11 +336,23 @@
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
+				<key>AAPL,GfxYTile</key>
+				<data>
+				AQAAAA==
+				</data>
 				<key>AAPL,ig-platform-id</key>
 				<data>
-				CQCbPg==
+				AACbPg==
+				</data>
+				<key>device-id</key>
+				<data>
+				mz4AAA==
 				</data>
 				<key>disable-external-gpu</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>enable-hdmi20</key>
 				<data>
 				AQAAAA==
 				</data>
@@ -368,10 +380,6 @@
 				<data>
 				AQAAAA==
 				</data>
-				<key>framebuffer-pipecount</key>
-				<data>
-				AgAAAA==
-				</data>
 				<key>framebuffer-portcount</key>
 				<data>
 				AgAAAA==
@@ -382,7 +390,7 @@
 				</data>
 				<key>framebuffer-unifiedmem</key>
 				<data>
-				AAAAYA==
+				AAAAgA==
 				</data>
 			</dict>
 		</dict>
