@@ -293,7 +293,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>-lilubetaall keepsyms=1 debug=0x100 -disablegfxfirmware -v darkwake=no</string>
+		<string>-lilubetaall debug=0x100 -disablegfxfirmware -v darkwake=8</string>
 		<key>CustomLogo</key>
 		<string>Apple</string>
 		<key>DefaultVolume</key>
@@ -320,6 +320,11 @@
 	</dict>
 	<key>Devices</key>
 	<dict>
+		<key>Audio</key>
+		<dict>
+			<key>Inject</key>
+			<integer>0</integer>
+		</dict>
 		<key>FakeID</key>
 		<dict>
 			<key>#Kaby Lake-Comment</key>
@@ -327,32 +332,13 @@
 		</dict>
 		<key>Properties</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
-			<dict>
-				<key>layout-id</key>
-				<data>
-				AgAAAA==
-				</data>
-			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
-				<key>AAPL,GfxYTile</key>
-				<data>
-				AQAAAA==
-				</data>
 				<key>AAPL,ig-platform-id</key>
 				<data>
-				AACbPg==
-				</data>
-				<key>device-id</key>
-				<data>
-				mz4AAA==
+				CQCbPg==
 				</data>
 				<key>disable-external-gpu</key>
-				<data>
-				AQAAAA==
-				</data>
-				<key>enable-hdmi20</key>
 				<data>
 				AQAAAA==
 				</data>
@@ -380,6 +366,10 @@
 				<data>
 				AQAAAA==
 				</data>
+				<key>framebuffer-pipecount</key>
+				<data>
+				AgAAAA==
+				</data>
 				<key>framebuffer-portcount</key>
 				<data>
 				AgAAAA==
@@ -390,7 +380,7 @@
 				</data>
 				<key>framebuffer-unifiedmem</key>
 				<data>
-				AAAAgA==
+				AAAAYA==
 				</data>
 			</dict>
 		</dict>
@@ -461,7 +451,7 @@
 			<key>ATI</key>
 			<false/>
 			<key>Intel</key>
-			<false/>
+			<true/>
 			<key>NVidia</key>
 			<false/>
 		</dict>
@@ -551,24 +541,6 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>disable IOBufferCopyController (Credit by DalianSky)</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				SU9LaXQ=
-				</data>
-				<key>InfoPlistPatch</key>
-				<true/>
-				<key>Name</key>
-				<string>IOBufferCopyController</string>
-				<key>Replace</key>
-				<data>
-				SU9LaXM=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>10.13.x USB Port Limit Patch</string>
 				<key>Disabled</key>
 				<false/>
@@ -589,7 +561,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>change 15 port limit to 26 in XHCI kext for 10.14</string>
+				<string>change 15 port limit to 26 in XHCI kext for 10.14 beta2</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
@@ -599,7 +571,7 @@
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
-				<string>10.14</string>
+				<string>10.14,10.14.x</string>
 				<key>Name</key>
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
@@ -609,7 +581,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>disable USB Port Limit Patch (PMheart) for 10.14</string>
+				<string>disable USB Port Limit Patch (PMheart) for 10.14 beta2</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
@@ -619,7 +591,7 @@
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
-				<string>10.14</string>
+				<string>10.14,10.14.x</string>
 				<key>Name</key>
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
@@ -639,12 +611,30 @@
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>MatchOS</key>
-				<string>10.14.1 beta2</string>
+				<string>10.14.1</string>
 				<key>Name</key>
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
 				<data>
 				g/sPkJCQkJCQ
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>disable IOBufferCopyController (Credit by DalianSky)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				SU9LaXQ=
+				</data>
+				<key>InfoPlistPatch</key>
+				<true/>
+				<key>Name</key>
+				<string>IOBufferCopyController</string>
+				<key>Replace</key>
+				<data>
+				SU9LaXM=
 				</data>
 			</dict>
 		</array>
