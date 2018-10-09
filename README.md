@@ -15,5 +15,25 @@
   - 添加`PM981`无法安装的驱动程序，**个人建议：PM981请直接绕行**
   - `CLOVER`常规更新到v4695
 
+- 10-10-2018
+
+  - 修改安装配置文件
+    - `config_first.plist` 安装镜像第一阶段时使用，可能存在黑屏现象
+    - `config_second.plist` 安装镜像第二、第三阶段使用
+    - `config.plist` 安装完成后使用
+  - `Whatevergreen` 更新到v1.2.4
+
   
+
+# QQ群：
+
+765888601 [小米游戏笔记本黑苹果](http://shang.qq.com/wpa/qunwpa?idkey=bef269b994e3738b66684b7c8821bd3390220552af9ab7d331f2f78487815f72) 
+
+756750452 [小米游戏本吃黑果讨论](http://qm.qq.com/cgi-bin/qm/qr?k=6-mc7yVIzkdv-XTj9_HL8wKi5y74lgXE) 
+
+
+
+
+
+
 
