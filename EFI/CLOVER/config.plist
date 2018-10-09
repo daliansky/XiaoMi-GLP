@@ -338,6 +338,10 @@
 				<data>
 				CQCbPg==
 				</data>
+				<key>device-id</key>
+				<data>
+				mz4AAA==
+				</data>
 				<key>disable-external-gpu</key>
 				<data>
 				AQAAAA==
@@ -451,7 +455,7 @@
 			<key>ATI</key>
 			<false/>
 			<key>Intel</key>
-			<true/>
+			<false/>
 			<key>NVidia</key>
 			<false/>
 		</dict>
