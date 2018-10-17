@@ -26,7 +26,10 @@
 - 10-17-2018
 
   - 重新编译`WhateverGreen`，支持直接亮屏
-  - 修改`config_installer.plist`，增加亮屏参数
+  - 修改`config_installer.plist`和`config.plist`，增加亮屏参数
+  - 添加`AppleBacklightInjector.kext`中对八代核显亮度的支持
+
+  
 
   
 
