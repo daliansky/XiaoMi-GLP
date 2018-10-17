@@ -293,7 +293,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>-lilubetaall debug=0x100 -disablegfxfirmware -v darkwake=8</string>
+		<string>-lilubetaall igfxcflbklt=force debug=0x100 -disablegfxfirmware -v darkwake=8</string>
 		<key>CustomLogo</key>
 		<string>Apple</string>
 		<key>DefaultVolume</key>
@@ -343,6 +343,10 @@
 				mz4AAA==
 				</data>
 				<key>disable-external-gpu</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>enable-cflbklt</key>
 				<data>
 				AQAAAA==
 				</data>
