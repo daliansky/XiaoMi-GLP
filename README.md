@@ -23,6 +23,11 @@
     - `config.plist` 安装完成后使用
   - `Whatevergreen` 更新到v1.2.4
 
+- 10-17-2018
+
+  - 重新编译`WhateverGreen`，支持直接亮屏
+  - 修改`config_installer.plist`，增加亮屏参数
+
   
 
 # QQ群：
