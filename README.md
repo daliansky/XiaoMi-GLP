@@ -39,6 +39,7 @@
     - 重新编译`WhateverGreen`，支持直接亮屏
     - 修改`config_installer.plist`和`config.plist`，增加亮屏参数
     - 添加`AppleBacklightInjector.kext`中对八代核显亮度的支持
+    - 亮度调节：勾选`AddPNLF`选项或者添加`SSDT-PNLF_CoffeeLake.aml`，特别感谢`@宪武`，[下载链接](https://github.com/daliansky/XiaoMi-GLP/raw/dev/EFI/CLOVER/ACPI/patched/SSDT-PNLF_CoffeeLake.aml)
 
 - 10-18-2018
 
