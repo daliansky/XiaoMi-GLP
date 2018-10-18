@@ -1,5 +1,14 @@
 # XiaoMi-GLP
 
+## 支持以下版本
+
+- Mojave 10.14
+- High Sierra 10.13.6
+  - 17G2112
+  - 17G2208
+
+## EFI更新日志
+
 - 9-17-2018
   - 添加网卡`Realtek 8111H/8168H`驱动
   - 更新显卡驱动方式
@@ -31,7 +40,16 @@
     - 修改`config_installer.plist`和`config.plist`，增加亮屏参数
     - 添加`AppleBacklightInjector.kext`中对八代核显亮度的支持
 
-  
+- 10-18-2018
+
+  - 更新clover版本到v4709，以解决八代安装时的黑屏问题
+
+    - ```
+      //  Coffee Lake: 0xFF7B/0xFFFF
+      FBLEVX = 0xFFFF;
+      ```
+
+    - 可通过`Devices/Properties`方式注入`EDID`参数
 
   
 
